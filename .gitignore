@@ -13,7 +13,6 @@ __pycache__/
 *.db
 *.jar
 *.html
-*.sh
 
 # Distribution / packaging
 .Python
