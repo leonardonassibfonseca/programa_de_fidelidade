@@ -58,7 +58,7 @@ Optou-se pelo uso do algoritmo GMM (Gaussian Mixture Model) devido à sua capaci
 ![Comparativo](img/comparativo_algoritmos.png)
 
 ## 8.	Resultado do negócio
-Conforme mostrado na figura abaixo, foram adicionados mais 2 cenários além do predito para as próximas 6 semanas em todas as lojas Rossmann, ou seja, um cenário pessimista e outro otimista, com isso o gestou conseguirá tomar a melhor decisão frente aos valores encontrados.
+Embora a performance do modelo seja melhor ao separar o conjunto de dados em mais de 20 clusters, decidimos, neste momento, manter apenas 8 clusters. Essa escolha foi feita porque acreditamos que seria mais viável para o time de marketing operacionalizar essa quantidade inicialmente.
  
  ![Cenarios](img/clusters_encontrados.jpg)
 
