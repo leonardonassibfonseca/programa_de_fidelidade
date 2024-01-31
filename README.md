@@ -55,7 +55,7 @@ Foram realizados diversos experimentos utilizando algoritmos de machine learning
 ## 7.	Performance do modelo de machine learning
 Optou-se pelo uso do algoritmo GMM (Gaussian Mixture Model) devido à sua capacidade de lidar eficazmente com clusters de formatos não circulares. Sua performance em relação a outros algoritmos mais abrangentes foi considerada bastante satisfatória.
  
-![Comparativo](img/comparativo_algoritmos.PNG)
+![Comparativo](img/comparativo_algoritmos.png)
 
 ## 8.	Resultado do negócio
 Conforme mostrado na figura abaixo, foram adicionados mais 2 cenários além do predito para as próximas 6 semanas em todas as lojas Rossmann, ou seja, um cenário pessimista e outro otimista, com isso o gestou conseguirá tomar a melhor decisão frente aos valores encontrados.
