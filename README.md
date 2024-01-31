@@ -121,11 +121,10 @@ Cluster 07:
 - Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 ## 9.	Conclusão
-O resultado prático deste projeto de previsão de vendas para uma empresa de medicamentos da Europa, reflete-se na capacidade de adicionar cenários otimistas e pessimistas além das previsões tradicionais. Essa abordagem oferece aos gestores uma visão mais abrangente, permitindo a tomada de decisões mais informadas diante de diferentes contextos.
-Dentre os principais insights, destacam-se a falsificação de hipóteses relacionadas à variedade de produtos, tendência de vendas ao longo dos anos e desempenho durante o feriado de Natal. Esses insights desafiam preconcepções e contribuem para uma compreensão mais precisa dos padrões de vendas.
-Em última análise, o projeto não apenas fornece um modelo de previsão confiável, mas também agrega valor ao negócio ao oferecer insights valiosos e cenários alternativos. A implementação prática do modelo permite que a Rossmann tome decisões estratégicas mais fundamentadas em um ambiente de negócios dinâmico e complexo.
+Concluímos que os participantes do programa de Insiders são clientes destacados por sua alta receita média, frequência de compra e recência. Este grupo é composto por 468 clientes, representando aproximadamente 16% do total.
+A contribuição dos Insiders para o faturamento total pode ser significativa. No entanto, é importante revisar essa contribuição periodicamente, pois eles podem ser removidos do programa se sua frequência de compra diminuir, se houver queda na receita gerada ou se a recência de suas compras se prolongar.
+O time de marketing tem a oportunidade de aumentar o faturamento total da empresa com esses grupos, implementando estratégias como campanhas direcionadas, personalização da experiência do cliente e programas de fidelidade adaptados a cada grupo de clientes.
 
 ## 10.	Próximos passos
-•	Fazer o balanceamento dos dados;
 •	Testar outros algoritmos de machine learning;
 •	Buscar novas variáveis para definir melhor o comportamento dos clientes.
