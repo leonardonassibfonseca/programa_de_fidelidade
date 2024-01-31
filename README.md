@@ -60,14 +60,14 @@ Optou-se pelo uso do algoritmo GMM (Gaussian Mixture Model) devido à sua capaci
 ## 8.	Resultado do negócio
 Conforme mostrado na figura abaixo, foram adicionados mais 2 cenários além do predito para as próximas 6 semanas em todas as lojas Rossmann, ou seja, um cenário pessimista e outro otimista, com isso o gestou conseguirá tomar a melhor decisão frente aos valores encontrados.
  
- ![Cenarios](img/clusters_encontrados.jpg
+ ![Cenarios](img/clusters_encontrados.jpg)
 
  Com a definição dos clusters, identificamos o cluster mais relevante em termos de faturamento para a empresa, denominado de clientes Insiders. Além disso, conseguimos listar possíveis ações para os demais clusters, visando sua possível integração ao programa de Insiders.
 
 Cluster 01: (Candidato à Insider)
 
-Número de clientes: 468 (15,8% da base)
-Receita média: $8.835,89
+- Número de clientes: 468 (15,8% da base)
+- Receita média: $8.835,89
 Recência média: 21,4 dias
 Média de produtos comprados: 424 produtos
 Frequência de produtos comprados por dia: 0,09
