@@ -65,7 +65,6 @@ Conforme mostrado na figura abaixo, foram adicionados mais 2 cenários além do 
  Com a definição dos clusters, identificamos o cluster mais relevante em termos de faturamento para a empresa, denominado de clientes Insiders. Além disso, conseguimos listar possíveis ações para os demais clusters, visando sua possível integração ao programa de Insiders.
 
 Cluster 01: (Candidato à Insider)
-
 - Número de clientes: 468 (15,8% da base)
 - Receita média: $8.835,89
 - Recência média: 21,4 dias
@@ -74,7 +73,6 @@ Cluster 01: (Candidato à Insider)
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 02:
-
 - Número de clientes: 145 (4,9% da base)
 - Receita média: $3.164,16
 - Recência média: 34,4 dias
@@ -83,7 +81,6 @@ Cluster 02:
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 03:
-
 - Número de clientes: 549 (18,5% da base)
 - Receita média: $2.045,05
 - Recência média: 59,1 dias
@@ -92,7 +89,6 @@ Cluster 03:
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 04:
-
 - Número de clientes: 760 (25,6% da base)
 - Receita média: $2.024,30
 - Recência média: 49,6 dias
@@ -101,7 +97,6 @@ Cluster 04:
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 05:
-
 - Número de clientes: 279 (9,4% da base)
 - Receita média: $954,05
 - Recência média: 77,4 dias
@@ -110,7 +105,6 @@ Cluster 05:
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 06:
-
 - Número de clientes: 175 (5,9% da base)
 - Receita média: $827,41
 - Recência média: 92,0 dias
@@ -119,7 +113,6 @@ Cluster 06:
 Ação: Aumentar a quantidade de produtos comprados e diminuir o tempo entre compras.
 
 Cluster 07:
-
 - Número de clientes: 242 (8,2% da base)
 - Receita média: $589,55
 - Recência média: 84,2 dias
