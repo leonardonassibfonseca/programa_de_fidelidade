@@ -1,17 +1,21 @@
-# Projeto Rossmann
+# Programa de Fidelidade
 
-Previsão de vendas para uma empresa de medicamentos da europa
+Identificar os melhores clientes como Insiders
 
 ![Clusterizacao](img/imagem_2.jpg)
 
 ## 1.	Problema de negócio
-Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmente, os gerentes das lojas Rossmann têm a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas nas lojas são influenciadas por muitos fatores, incluindo promoções, concorrência, feriados escolares e estaduais, sazonalidade e localidade. Com milhares de gestores individuais prevendo vendas com base em circunstâncias específicas, a precisão dos resultados pode ser bastante variada.
+A empresa All in One Place é uma empresa Outlet Multimarcas, ou seja, ela comercializa produtos de segunda linha de várias marcas a um preço menor, através de um e-commerce.
+Em pouco mais de 1 ano de operação, o time de marketing percebeu que alguns clientes da sua base, compram produtos mais caros, com alta frequência e acabam contribuindo com uma parcela significativa do faturamento da empresa.
+Baseado nesta percepção, o time de marketing que lançar um programa de fidelidade para os melhores clientes da base, intitulado Insiders. Mas o time não tem um conhecimento avançado em análise de dados para eleger os participantes do programa.
+Por este motivo, o time de marketing requisitou ao time da dados uma seleção de clientes elegíveis ao programa, usando técnicas avançadas de manipulação de dados.
 
 ## 2.	Objetivo
-Construir um modelo robusto para prever 6 semanas de vendas diárias para 1.115 lojas localizadas em toda a Europa.
+Determinar quem são os clientes elegíveis para participar do programa Insiders para que o time de marketing possa direcionar a ações personalizadas e exclusivas a este grupo, de modo a aumentar o faturamento e frequência de compra.
 
 ## 3.	Premissas do negócio
-Foi considerada a variável “open” como 1, ou seja, as lojas deverão estar abertas e a variável “sales” deve ser maior que 0, neste caso, as lojas deverão ter no mínimo 1 venda.
+Para assegurar que o comportamento da variável "customer_id" fosse registrado, mesmo em linhas com dados faltantes, foi adotada uma abordagem na qual essas lacunas foram preenchidas utilizando o valor máximo encontrado na variável "customer_id", acrescido de uma unidade. Por exemplo, se o maior valor de "customer_id" encontrado é 18.999, então a primeira linha sem um valor para "customer_id" seria preenchida com 18.999 + 1, resultando em 19.000. Esse procedimento foi repetido para todas as linhas onde "customer_id" estava ausente, seguindo essa lógica de incremento sequencial.
+Além disso, optou-se por remover as linhas da variável "stock_code" contendo as informações: 'POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY', 'DCGSSGIRL', 'PADS', 'B', 'CRUK', pois estas não contribuíam significativamente para a análise dos dados, sugerindo a presença de ruído nos dados.
 
 ## 4.	Estratégia adotada para solução
 
@@ -36,18 +40,20 @@ Passo 9 - Performance do negócio: Nesta etapa, o termo "performance do negócio
 Passo 10 - Modelo em produção: Nesta etapa final, o melhor modelo treinado é implantado e usado em um ambiente operacional do mundo real. O objetivo principal deste passo de colocar um modelo em produção é transformar o trabalho de desenvolvimento de modelos em um sistema que pode fornecer valor contínuo e automático.
 
 ## 5.	Top 3 insights
-Hipótese 1: Lojas com maior sortimento (variedades) deveriam vender mais?
-Falsa: Lojas com maior sortimento (variedades) NÃO vendem mais.
-Hipótese 2: Lojas deveriam vender mais ao longo dos anos?
-Falsa: Lojas NÃO vendem mais ao longo dos anos.
-Hipótese 3: Lojas abertas durante o feriado de natal deveriam vender mais?
-Falsa: Lojas abertas durante o feriado de natal vendem menos em relação a outros tipos de feriados.
+Hipótese 1: O faturamento dos clientes do cluster Insider está concentrado no 3º quartil?
+Falsa: O faturamento dos clientes do cluster Insider está concentrado no 1º quartil.
+
+Hipótese 2: Os clientes do cluster Insider tem um número médio de devoluções abaixo da média da base total de clientes?
+Falsa: A média de devoluções do cluster Insider tem um número médio de devoluções acima da média da base total de clientes.
+
+Hipótese 3: Os clientes do cluster Insider possuem um volume (produto) de compras abaixo de 10% do total de compras?
+Falsa: Os clientes do cluster Insider possuem um volume (produto) de compras acima de 54% do total de compras.
 
 ## 6.	Aplicação do modelo de machine learning
-Foram feitos testes com vários algoritmos de machine learning, utilizando a técnica de cross-validation e ajuste fino dos parâmetros.
+Foram realizados diversos experimentos utilizando algoritmos de machine learning em conjunto com técnicas de espaços de embedding, como PCA, UMAP, t-SNE e Árvores de decisão, além também das variáveis originais, com o objetivo de determinar quais algoritmos apresentavam a melhor performance.
 
 ## 7.	Performance do modelo de machine learning
-O algoritmo de machine learning escolhido foi o XGBRegressor.
+Optou-se pelo uso do algoritmo GMM (Gaussian Mixture Model) devido à sua capacidade de lidar eficazmente com clusters de formatos não circulares. Sua performance em relação a outros algoritmos mais abrangentes foi considerada bastante satisfatória.
  
 ![Comparativo](img/comparativo_algoritmos.JPG)
 
